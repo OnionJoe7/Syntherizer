@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="css/styling.css">
+
+  </head>
+
+<body>
+  
+  <main id="main-holder">  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <h1>Syntherizer</h1>
+  <div class="container">
+    <div class="keyboard"></div>
+    </div>
+    
+        <input type="text" autocomplete="off" name="username" id="username-field" class="login-form-field" placeholder="Username">
+        <input type="password" autocomplete="off" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <input type="password" autocomplete="off" name="password" id="password2-field" class="login-form-field" placeholder="Re-enter Password">
+        <form>
+          <input type="button" value="Submit" id="register-form-submit" name="thebutton">
+          <input type="button" value="Reset Melody" onclick=resMes() id="record-form-submit">
+          <input type="button" value="Back to mainpage" onclick="toMain()" id="back-form-submit">
+      </form>
+    
+</body>
+<script src="js/script.js"></script>
+<script>
+  function toMain() {
+    window.location.href = '../Login/login.php'; 
+  }
+  function resMes(){
+    alert("Melody has been reset");
+  }
+</script>
+</main>
+
+  
+</html>
